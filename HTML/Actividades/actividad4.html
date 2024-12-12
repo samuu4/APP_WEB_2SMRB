@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi formulario</title>
+ <head>
+<body>
+    <h1>Mi formulario</h1>
+    <form action="/registro" method="POST">
+<form> 
+    <fieldset>
+        <legend>Información personal</legend>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name"><br>
+        <label for="apellido">apellido:</label>
+        <input type="apellido" id="apellido"><br>
+        <label for="fecha de nacimiento">fecha de nacimiento:</label>
+        <input type="date" id="fecha de nacimiento"><label>
+          <label for="sexo">género: </label>
+          <select id="sexo">
+              <!--Etiqueta option-->
+              <option value="value1">masc</option> 
+              <option value="value2" selected>femenino</option>
+          </select><br><br> 
+    </fieldset>
+ 
+<form>
+    <fieldset>
+        <legend>Información del contacto</legend>
+        <label for="email">correo:</label>
+        <input type="email" id="email"><br>
+        <label for="number">telefono:</label> 
+        <input type="number" id="number"><br>
+        <label for="name">dirección</label>
+        <input type="text" id="name"><br>
+
+    </fieldset>
+
+</form>
+    <fieldset>
+        <legend>Información de cuenta</legend>
+        <label for="name">Nombre de usuario:</label>
+      <input type="text" id="name"><br>
+      <label for="name">contraseña</label>
+      <input type="text" id="name"><br>
+      <label for="name">comprobación de contraseña</label>
+      <input type="text" id="name"><br>
+
+    </fieldset>
+  </form>
+   <fieldset>
+    <legend> preferencias</legend>
+    <label for="color">color favorito: </label>
+    <select id="color">
+        <!--Etiqueta option-->
+        <option value="value1">rojo</option> 
+        <option value="value2" selected>azul</option>
+        <option value="value3">amarillo</option> 
+        <option value="value4" selected>verde</option>
+    </select><br><br>
+    <button id="enviar" name="enviar" type="submit">ENVIAR</button>
+
+   </fieldset>

@@ -1,0 +1,45 @@
+/*-------Cambios generales apllicados a todas las etiquetas-------*/
+body{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/*----cabecero (header)-------*/
+.cabecero{
+    background-color: #010101;
+    display: flex;
+
+    align-items: stretch;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+
+.cabecero_logo{
+    width: 20rem;
+}
+ 
+.cabecero_menu_lista{
+    display: flex;
+}
+
+.cabecero_menu_lista_enlace{
+    margin: 1.25rem;
+    font-size: 1.5rem;
+    color: aliceblue;
+}
+
+
+/*------cuerpo (body)-----*)
+
+
+
+
+
+/*-------pies(footer)-------*)
