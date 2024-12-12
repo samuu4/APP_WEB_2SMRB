@@ -1,45 +1,189 @@
-/*-------Cambios generales apllicados a todas las etiquetas-------*/
-body{
+/*---------General--------*/
+*{
+    box-sizing: border-box;
+    padding: 0;
     margin: 0;
+    font-family: "Montserrat", serif;
 }
-
 a{
     text-decoration: none;
 }
+ul{
+    list-style: none;
+} 
+body{
+    margin:0;
+    background-color: #efefef;
+}
+fieldset{
+    border: 0;
+}
 
-
-/*----cabecero (header)-------*/
-.cabecero{
+/*------ Header ------*/
+.cabecera{
+    display: flex;
+    width: 100%;
     background-color: #010101;
-    display: flex;
-
-    align-items: stretch;
     justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: space-between;
+    align-items: center;
 }
 
-
-.cabecero_logo{
-    width: 20rem;
-}
- 
-.cabecero_menu_lista{
+.cabecera__logo{
+    width: 20%;
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.cabecero_menu_lista_enlace{
-    margin: 1.25rem;
-    font-size: 1.5rem;
+.cabecera__logo__img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /*La imagen se ajusta al contenedor*/
+}
+
+.cabecera__nav{
+    margin-right: 2rem;
+    /* width: 80%; */
+}
+
+.cabecera__nav__lista{
+    display:flex;
+}
+
+.cabecera__nav__lista__enlace{
+    color:aliceblue;
+    font-size: 1.25rem;
+    margin: 0.5rem;
+}
+
+.cabecera__nav__lista__enlace:hover{
+    color:rgb(104, 50, 205);
+}
+
+
+/* ----- Main ------*/
+.principal{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.principal__titulo{
+    width: 100%;
+    text-align: center;
+    margin:2rem;
+}
+
+.principal__sección{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-left:2rem;
+    padding-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+.principal__sección__art{
+    width: 30%;
+    display:flex;
+    flex-direction: column;
+}
+
+.principal__sección__art__img{
+    border-radius: 1.5rem;
+}
+
+.principal__sección__art__div{
+    display: flex;
+    width: 100%;
+    margin-top: 0.5rem; 
+    justify-content: space-around;
+    align-items: center;
+}
+
+.principal__seccimg__art__div__text{
+    width: 60%;
+    font-weight: bold;
+}
+
+.principal__sección__art__div__boton{
+    width: 40%;
+    background-color: rgb(114, 112, 112);
+    padding: 0.25rem;
     color: aliceblue;
+    text-align: center;
+    border-radius: 0.5rem;
 }
 
+.principal__sección__art__div__boton:hover{
+    background-color:#b11919;
+}
 
-/*------cuerpo (body)-----*)
+.principal__sección2{
+    width: 100%;
+    background-color: #787879;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem;
 
+}
 
+.principal__sección__form__titulo{
+    color: aliceblue;
+    text-align: center;
+    font-size: 150%;
+    margin-bottom: 3rem;
+}
 
+.principal__sección__form__label{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 
+.principal__sección__form__label__input{
+    margin-bottom:0.75rem;
+    font-size: 90%; 
+    padding: 0.5rem;   
+    border: none;
+}
 
-/*-------pies(footer)-------*)
+.principal__sección{
+    font-size: 90%;
+    background-color:grey;
+    color: #efefef;
+    border: none;
+    padding:0.5rem;
+    border-radius: 0.25rem;
+    /* font-weight: bold; */
+}
+
+.principal__sección__form__label__boton:hover{
+    background-color:yellow;
+    color:#010101;
+    /* font-weight: bold; */
+}
+
+/*--- Footer --*/
+.footer{
+    width: 100%;
+    background-color: rgb(189, 189, 199);
+    padding-top:1.5rem;
+    padding-bottom:1.5rem;
+}
+
+.footer__lista{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer__lista__enlace{
+    color: #0c0606;
+}
+
+.footer__lista__enlace:hover{
+    color: #063b18;
+    font-weight: bold;
+}
